@@ -1,0 +1,80 @@
+body{
+    background: url(background.jpg) center/cover no-repeat fixed;
+}
+#calculator{
+    max-width: 500px;
+    padding: 50px;
+    margin: 10px auto;
+    background-color: #C0C0C0;
+    border-radius: 50px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+}
+#calculator button{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+}
+#calculator .buttonContainer{
+    padding: 5px;
+    box-sizing: border-box;
+}
+#inputText{
+    width: 100%;
+    height: 100px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Workbench', sans-serif;
+    font-size: 3em;
+    text-align: right;
+    background-color: #8BAC0F;
+    color: #0F380F;
+    box-shadow: inset 0 0 10px rgba(15, 56, 15, 0.5);
+    outline: 1px solid #d1d1d1;
+}
+.upperPortion{
+    padding-bottom: 25px;
+}
+.bottomPortion{
+    display: flex;
+    height: 500px;
+}
+.numberArea{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+}
+.numberArea .buttonContainer{
+    flex: 1 0 33%;
+    height: 25%;
+}
+.numberArea button{
+    background-color: #A0A0A0;
+    border: 2px solid #4d4d4d;
+}
+.numberArea button:active{
+    background-color: #dddddd;
+    border: 2px solid #949494;
+}
+.numberArea #clear{
+    color: #fff;
+    background-color: #272727;
+    border: 2px solid #000000;
+}
+.calcArea{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.calcArea .buttonContainer{
+    flex: 1 0 100%;
+    height: 20%;
+}
+.calcArea button{
+    color: #fff;
+    background-color: #76234e;
+    border: 2px solid #4b1631;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Odin Project Calculator</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Workbench&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css" /> 
+    </head>
+    <body>
+        <div id="calculator">
+            <div class="upperPortion">
+                <input id="inputText" type="text" value="1234" readonly />
+            </div>
+            <div class="bottomPortion">
+                <div class="numberArea">
+                    <span class="buttonContainer"><button id="digit7">7</button></span>
+                    <span class="buttonContainer"><button id="digit8">8</button></span>
+                    <span class="buttonContainer"><button id="digit9">9</button></span>
+                    <span class="buttonContainer"><button id="digit4">4</button></span>
+                    <span class="buttonContainer"><button id="digit5">5</button></span>
+                    <span class="buttonContainer"><button id="digit6">6</button></span>
+                    <span class="buttonContainer"><button id="digit1">1</button></span>
+                    <span class="buttonContainer"><button id="digit2">2</button></span>
+                    <span class="buttonContainer"><button id="digit3">3</button></span>
+                    <span class="buttonContainer"><button id="digit0">0</button></span>
+                    <span class="buttonContainer"><button id="decimal">.</button></span>
+                    <span class="buttonContainer"><button id="clear">C</button></span>
+                </div>
+                <div class="calcArea">
+                    <span class="buttonContainer"><button id="division">÷</button></span>
+                    <span class="buttonContainer"><button id="multiplication">×</button></span>
+                    <span class="buttonContainer"><button id="subtraction">-</button></span>
+                    <span class="buttonContainer"><button id="addition">+</button></span>
+                    <span class="buttonContainer"><button id="equal">=</button></span>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js" defer></script>
+</html>
