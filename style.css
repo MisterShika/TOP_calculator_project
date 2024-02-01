@@ -13,9 +13,21 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 100px;
-    
     font-size: 4em;
+    cursor: pointer;
     font-family: 'Roboto', sans-serif;
+    border: none;
+    padding: 0;
+    outline-offset: 4px;
+}
+#calculator button .front{
+    display: block;
+    border-radius: 50px;
+    transform: translateY(-6px);
+}
+#calculator button:active .front{
+    transform: translateY(-2px);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 #calculator .buttonContainer{
     padding: 5px;
@@ -26,14 +38,14 @@ body{
     height: 100px;
     border: 0;
     margin: 0;
-    padding: 0;
+    padding: 5px 0;
     font-family: 'Workbench', sans-serif;
     font-size: 3em;
     text-align: right;
     background-color: #8BAC0F;
     color: #0F380F;
     box-shadow: inset 0 0 10px rgba(15, 56, 15, 0.5);
-    outline: 1px solid #d1d1d1;
+    outline: 1px solid #8BAC0F;
 }
 .upperPortion{
     padding-bottom: 25px;
@@ -52,17 +64,18 @@ body{
     height: 25%;
 }
 .numberArea button{
-    background-color: #A0A0A0;
-    border: 2px solid #4d4d4d;
+    background-color: #6e6a6b;
 }
-.numberArea button:active{
-    background-color: #dddddd;
-    border: 2px solid #949494;
+.numberArea button .front{
+    padding: 18px 0;
+    background: #7c7a7b;
 }
 .numberArea #clear{
     color: #fff;
-    background-color: #272727;
-    border: 2px solid #000000;
+    background-color: #1c1a1b;
+}
+.numberArea #clear .front{
+    background-color: #2c2c2e;
 }
 .calcArea{
     display: flex;
@@ -75,6 +88,9 @@ body{
 }
 .calcArea button{
     color: #fff;
-    background-color: #76234e;
-    border: 2px solid #4b1631;
+    background-color: #67003c;
+}
+.calcArea button .front{
+    background-color: #862558;
+    padding: 5px 0;
 }
